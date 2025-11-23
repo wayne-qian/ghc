@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>搞事集团官网(员工)</title>
+</head>
+
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
+	.title {
+		margin-top: 30px;
+		text-align: center;
+		font-size: 32px;
+		color: #323;
+		margin-bottom: 10px;
+	}
+
+	.desc {
+		color: #666;
+		text-align: center;
+		font-size: 18px;
+	}
+
+	.icon {
+		display: block;
+		width: 48px;
+		height: 48px;
+		margin: 30px auto;
+	}
+
+	.btn-group {
+		text-align: center;
+		margin: 20px 0;
+	}
+
+	.nav-btn {
+		padding: 12px 24px;
+		margin: 0 8px;
+		cursor: pointer;
+		background-color: #234b;
+		color: navajowhite;
+		font-size: 16px;
+	}
+
+	.nav-btn:hover {
+		background-color: #32233469;
+	}
+
+	.page-container {
+		position: absolute;
+		top: 229px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		padding-top: 20px;
+	}
+
+	.page {
+		font-size: 24px;
+		color: #333;
+		padding: 20px 40px;
+		background-color: white;
+		border-radius: 12px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1)
+	}
+
+	.page.active {
+		display: block;
+	}
+</style>
+
+<body>
+	<div class="btn-group">
+		<button class="nav-btn" onclick="showPage('')">首页</button>
+		<button class="nav-btn" onclick="showPage('news')">新闻</button>
+		<button class="nav-btn" onclick="showPage('emp')">员工</button>
+		<button class="nav-btn" onclick="showPage('about')">关于</button>
+	</div>
+
+	<div class="page">员工名单 : 
+		<strong>郭**</strong>
+		<strong>qwy</strong>
+		...
+	</div>
+
+	<button onclick="alert('本网站作者 : qwy, ghc')">?</button>
+
+	<script>
+		function showPage(pageId) {
+			window.location = 'https://gaoshi.qwy.ac/' + pageId;
+		}
+		console.log("恭喜你发现了宝藏，但是我劝你什么都别动，动了浮木丝光, 少羽牛逼.");
+	</script>
+
+</body>
+
+</html>
